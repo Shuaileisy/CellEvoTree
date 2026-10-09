@@ -1,0 +1,75 @@
+Package: CellEvoTree
+Type: Package
+Title: Phylogeny-Inspired Cell State Evolution Trees
+Version: 0.1.0
+Authors@R: person("YOUR_GIVEN_NAME", "YOUR_FAMILY_NAME", email = "YOUR_EMAIL@example.org", role = c("aut", "cre"))
+Description: Builds phylogeny-inspired cell state evolution trees from single-cell
+    data. The expression-first workflow uses scalable metacells, gene expression,
+    and TF messenger RNA expression to propose primary sister relationships. It
+    estimates primary-layer weights and uncertainty by split-feature resampling,
+    then audits candidate primary layers using feature reliability, whole-sample
+    topology retention, and within-group sample-neighbor enrichment. Audits can
+    warn, downweight, or demote unstable optional layers while protecting the
+    expression reference geometry. Repeated distance-correlation and local-neighbor
+    overlap analyses quantify whether regulon evidence is only partially redundant
+    with expression. The workflow then allows regulon and module information to
+    refine only topology changes
+    that preserve empirical primary-distance, neighborhood, and protected-split
+    constraints. Cell-type labels are annotation-only by default and are not
+    used for primary distances or topology selection. Slingshot, RNA velocity,
+    UMAP, and optional CellRank transition
+    priors provide direction and post-hoc biological diagnostics. Sample-aware
+    leave-one-sample-out topology stability, per-edge Slingshot and velocity
+    direction support, exact Shapley branch-discrimination attribution, and
+    multi-start constrained topology search provide explicit uncertainty and
+    sensitivity analyses. A known-truth stress benchmark simulates multiple
+    topology shapes, cell counts, dropout, sample-batch effects, RNA-velocity
+    errors, regulon-edge corruption, and branch drivers. Adaptive batch
+    correction combines within-group sample-label permutations with
+    empirical-Bayes offset shrinkage. Publication-oriented benchmarks run
+    Slingshot and Monocle3 through a common graph-distance interface, accept
+    independent reference simulations, report method failures, and perform
+    paired bootstrap and multiple-testing-adjusted comparisons. A
+    resource-planned topology optimizer reuses topology distances and cached
+    reference ranks while retaining exact primary constraints. State-specific
+    GRN inference uses SCENIC edge priors with either activity-target products
+    or local ridge regression, and known-truth benchmarks evaluate edge gain,
+    loss, strengthening, and weakening. Branch Shapley validation can equalize
+    biological samples and calibrate attribution with label permutations. A legacy
+    balanced multi-view workflow remains available. The package explains branch
+    splits and estimates view contributions. Sample-aware metacell boundaries,
+    within-group primary-feature centering, and conditional sample-neighbor
+    diagnostics support explicit batch-sensitivity analysis. RNA-velocity root
+    scores and inverse velocity pseudotime are combined as robust root evidence;
+    a weighted tree-median edge orients the tree without requiring a stage label
+    to form a monophyletic outgroup. These trees are regulatory
+    cell-state trees, not true genetic lineage or mutation-based phylogenies.
+License: MIT + file LICENSE
+URL: https://github.com/YOUR_GITHUB_USERNAME/CellEvoTree
+BugReports: https://github.com/YOUR_GITHUB_USERNAME/CellEvoTree/issues
+Encoding: UTF-8
+ByteCompile: no
+Depends:
+    R (>= 4.1.0)
+Imports:
+    compiler,
+    methods,
+    parallel,
+    stats,
+    utils
+Suggests:
+    ape,
+    FNN,
+    ggplot2,
+    igraph,
+    irlba,
+    Matrix,
+    monocle3,
+    RcppHNSW,
+    Seurat,
+    SeuratObject,
+    shiny,
+    SingleCellExperiment,
+    slingshot,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

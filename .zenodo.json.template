@@ -1,0 +1,21 @@
+{
+  "title": "CellEvoTree: Phylogeny-Inspired Cell State Evolution Trees",
+  "upload_type": "software",
+  "description": "R software for role-separated regulatory cell-state tree reconstruction, orientation, diagnostics, and branch interpretation.",
+  "creators": [
+    {
+      "name": "YOUR_FAMILY_NAME, YOUR_GIVEN_NAME",
+      "orcid": "YOUR_ORCID",
+      "affiliation": "YOUR_AFFILIATION"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "single-cell RNA sequencing",
+    "regulatory state tree",
+    "gene regulatory network",
+    "RNA velocity",
+    "SCENIC"
+  ],
+  "version": "0.1.0"
+}

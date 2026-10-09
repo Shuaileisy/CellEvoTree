@@ -1,0 +1,17 @@
+^inst/docs/~\$.*$
+^benchmarks/.*\.csv$
+^benchmarks$
+^\.github$
+^\.gitignore$
+^\.gitattributes$
+^CONTRIBUTING\.md$
+^CODE_OF_CONDUCT\.md$
+^SECURITY\.md$
+^RELEASE_CHECKLIST\.md$
+^GITHUB_RELEASE_GUIDE_CN\.md$
+^CITATION\.cff$
+^paper$
+^\.zenodo\.json\.template$
+^README_CN\.md$
+^GITHUB_SETUP_REQUIRED\.md$
+^LICENSE\.md$

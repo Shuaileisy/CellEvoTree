@@ -1,0 +1,44 @@
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.env
+
+# Single-cell and velocity objects belong in GEO/Zenodo, not Git history.
+*.rda
+*.rds
+*.h5ad
+*.h5
+*.loom
+*.mtx
+*.mtx.gz
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+*.cram
+
+*.Rcheck/
+*.tar.gz
+*.zip
+check/
+dist/
+
+*_cache/
+*_files/
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Manuscript drafts are maintained outside the public package repository.
+paper/manuscript/*.docx
+paper/manuscript/*.pdf
+
+# Publish only portable simulation benchmarks. Real-data development scripts
+# retain private-data entry points and remain local.
+benchmarks/*
+!benchmarks/README.md
+!benchmarks/run_nature_communications_benchmark_202608.R
+!benchmarks/run_top_method_benchmark_202608.R

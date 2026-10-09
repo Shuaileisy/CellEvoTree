@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use CellEvoTree, please cite this software and the associated methods publication when available."
+title: "CellEvoTree: Phylogeny-Inspired Cell State Evolution Trees"
+version: 0.1.0
+authors:
+  - family-names: "YOUR_FAMILY_NAME"
+    given-names: "YOUR_GIVEN_NAME"
+    orcid: "https://orcid.org/YOUR_ORCID"
+repository-code: "https://github.com/YOUR_GITHUB_USERNAME/CellEvoTree"
+license: MIT
+type: software
+keywords:
+  - single-cell RNA sequencing
+  - regulatory state tree
+  - gene regulatory network
+  - trajectory inference
+  - RNA velocity
+  - SCENIC

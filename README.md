@@ -20,8 +20,11 @@ After the repository owner is confirmed, install the development release from
 GitHub with:
 
 ```r
+# Install pak if not already installed
 install.packages("pak")
-pak::pak("YOUR_GITHUB_USERNAME/CellEvoTree")
+
+# Install CellEvoTree from GitHub
+pak::pak("Shuaileisy/CellEvoTree")
 ```
 
 The checked source archive can also be installed directly:
